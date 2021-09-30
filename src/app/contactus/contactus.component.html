@@ -1,0 +1,33 @@
+ <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+    <div class="row clearfix">
+        <div class="container">
+            <div class="center-form panel">
+                <div class="panel-body">
+                    <h4 class="text-center"><i class="ion-edit"></i>Contact us</h4>
+                    <form [formGroup]="contactForm" (submit)="sendMessage()">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" formControlName="firstName"
+                                placeholder="First name" name="firstName">
+                            <input type="text" class="form-control input-lg" formControlName="lastName"
+                                placeholder="Last name" name="lastName">
+                            <span class="ion-person form-control-icon"></span>
+                        </div>
+                        <div class="form-group">
+                            <input [formControlName]="'email'" type="email" class="form-control" placeholder="Email" name="email">
+                            <span class="ion-key form-control-icon"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea [formControlName]="'message'" rows="10" cols="100" class="form-control" placeholder="Send your message" name="message">
+                            </textarea>
+                                <span class="ion-edit form-control-icon"></span>
+                        </div>
+                        <button type="submit" [class.disabled]="!contactForm.valid"
+                            class="btn btn-block btn-success">Send</button>
+                        <hr>
+                        <small>Leave us a message and we will contact you! <br> <a routerLink="/Home">Home</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
