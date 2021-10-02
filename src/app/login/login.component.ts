@@ -15,11 +15,11 @@ export class LoginComponent implements OnInit {
     email: new FormControl(null, [Validators.required]),
     password: new FormControl(null, [Validators.required]),
   });
-  returnUrl: string;
+  returnUrl!: string;
   constructor(private auth: AuthenticationService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.returnUrl = this.route.queryParams['returnUrl'] || '/';
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
 
   login() {

@@ -100,18 +100,6 @@ export const configuration = {
   blog: {
     tagline: 'MY BLOG',
     title: 'Thoughts become things...',
-    posts: [
-      { id: 1, title: 'The first Article', author: 'AD', image: 'gallery-image-1.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 2, title: 'The second Article', author: 'AD', image: 'gallery-image-2.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 3, title: 'The third Article', author: 'AD', image: 'gallery-image-3.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 4, title: 'The fourth Article', author: 'AD', image: 'gallery-image-4.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 5, title: 'The fifth Article', author: 'AD', image: 'gallery-image-5.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 6, title: 'The sixth Article', author: 'AD', image: 'gallery-image-6.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 7, title: 'The seventh Article', author: 'AD', image: 'gallery-image-2.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 8, title: 'The eighth Article', author: 'AD', image: 'gallery-image-4.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 9, title: 'The nineth Article', author: 'AD', image: 'gallery-image-6.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 10, title: 'The tength Article', author: 'AD', image: 'gallery-image-3.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-      { id: 11, title: 'The eleventh Article', author: 'AD', image: 'gallery-image-1.jpg', publishdate: '2021-06-19T07:22Z', excert: 'This is the summary...' },
-    ]
+  
   }
 };

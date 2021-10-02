@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class AuthenticationService {
 
   private apiurl: any = 'api/users';
-  private isloggedIn: boolean;
+  private isloggedIn!: boolean;
 
   constructor(private http: HttpClient, private router: Router) {
   }
@@ -40,7 +40,7 @@ export class AuthenticationService {
   login(data: any): Observable<User> {
     return this.http.post<any>(`${this.apiurl}/login`, data).pipe(
       tap((user: User) => {
-        if (user && user.token) {
+        if (user ) {
           localStorage.setItem('currentUser', JSON.stringify(user));
           this.isloggedIn = true;
         }
